@@ -1,0 +1,21 @@
+<mvc:View controllerName="sapips.training.jsonbinding.controller.JSONBinding"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:form="sap.ui.layout.form" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <Panel id= "idPanel1" headerText="Data Binding Basics" class="sapUiResponsiveMargin" width="auto">
+            <content>
+                <form:SimpleForm>
+                    <form:content>
+                        <Label text="EID" />
+                        <Input value="{/EID}" enabled="{/Enabled}"/>
+                        <Label text="Enabled" />
+                        <Checkbox selected="{/Enabled" />
+                    </form:content>
+                </form:SimpleForm>
+            </content>
+        </Panel>
+        </content>
+    </Page>
+</mvc:View>
